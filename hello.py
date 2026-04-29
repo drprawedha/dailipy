@@ -7,6 +7,11 @@ var1 = 'Rhesa Prawedha'
 print ('my name is', var1)
 
 # Menggunakan f-strings
-var = "Dhantel Rhesa Prawedha"
-print(f"Hi my name {var}")
+var2 = "Dhantel Rhesa Prawedha"
+print(f"Hi my name {var2}")
 
+# Input
+print()
+var3 = input("nama anda : ")
+print()
+print('nama saya',var3)
