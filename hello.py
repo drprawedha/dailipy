@@ -15,3 +15,8 @@ print()
 var3 = input("nama anda : ")
 print()
 print('nama saya',var3)
+
+
+# without new line
+print('Hello World', end=' ')
+print('I Will text you soon')
