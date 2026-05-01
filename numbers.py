@@ -77,3 +77,8 @@ print(math.ceil(4.1), math.floor(4.9), math.trunc(-3.7))
 #          ↑ menuju nol
 # ──────┬──────┬──────
 #      -4  [-3.7]  -3    0
+
+
+import random
+
+print(random.randrange(1, 10))
