@@ -17,7 +17,7 @@ print(int(5/3))
 print('sample mix teks dan nomor')
 print('i am',33,'years old.')
 
-print('pembulatan 10//3')
+print('pembulatan hasil dari 10//3')
 print(10//3)
 
 print('modulis di 11 % 5')
