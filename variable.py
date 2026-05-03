@@ -46,7 +46,7 @@ fname = input('Nama Anda :')
 print(type(fname))
 fages = input('Umur Anda :')
 # print(type(fages)) Control Perubahan
-fagei = int(fages)
+fagei = int(fages) #error apabila isian bukan berisi angka, namun huruf
 print(type(fagei))
 ftalls = input('Tinggi :')
 ftallf = float(ftalls)
