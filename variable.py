@@ -42,7 +42,7 @@ print(sapaan2)
 # "Nama: Andi, umur 20 tahun, tinggi 1.72m. Pelajar: True. Makanan favorit: ['nasi goreng', 'soto', 'bakso']"
 
 
-fname = input(str('Nama Anda :'))
+fname = input('Nama Anda :')
 print(type(fname))
 fages = input('Umur Anda :')
 # print(type(fages)) Control Perubahan
@@ -53,7 +53,8 @@ ftallf = float(ftalls)
 print(ftallf)
 print(type(ftallf))
 fstatus = input('Apakah pelajar? (true/false)')
-fstatusb = bool(fstatus)
+fstatusb = fstatus.lower() == 'ya'   # True kalau user ketik "ya", selain itu False
+print(fstatusb)  # True atau False yang akurat
 print(type(fstatusb))
 makananfav = ['mie','bakso','burger']
 
