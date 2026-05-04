@@ -21,9 +21,12 @@ def print_receipt(items,paid):
 
     grand_total = 0
     for item in items:
-        total = calculate_total(item['price'],item['qty'],item['discount'])
+        total = calculate_total(
+            item['price'],
+            item['qty'],
+            item['discount'])
         grand_total += total
-        print(f"Item  : {item['name']}")
+        print(f"Item    : {item['name']}")
         print(f"Price   : Rp {item['price']}")
         print(f"Qty     : {item['qty']}")
         print(f"Total   : Rp {total}")
@@ -51,7 +54,7 @@ def get_int_input(prompt):
             print(f"Invalid input: {e}. Try Again")
 
 def get_float_input(prompt, min_val=0, max_val=1):
-    while True:
+    while True: # new sample while ....
         try:
             value = float(input(prompt))
             if value < min_val or value > max_val:
@@ -85,7 +88,10 @@ while True:
         items.append(add_item())
     elif choice == "2":
         # hitung dulu grand total
-        grand_total = sum(calculate_total(item['price'], item['qty'], item['discount']) for item in items)
+        grand_total = sum(calculate_total(
+            item['price'], 
+            item['qty'], 
+            item['discount']) for item in items)
         print(f"\nGrand Total : Rp {grand_total}")
         paid = get_int_input("Paid: ")
         print_receipt(items, paid)
