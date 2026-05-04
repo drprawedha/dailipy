@@ -26,3 +26,4 @@ try:
 except InvalidPriceError as e:
     print(f"Price error : {e}")
     
+# class InvalidAgeError(Exception) artinya buat class baru yang mewarisi semua perilaku Exception. pass karena kita tidak perlu tambah apa-apa — nama yang spesifik sudah cukup.
